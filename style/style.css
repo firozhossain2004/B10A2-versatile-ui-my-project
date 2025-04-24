@@ -1,15 +1,18 @@
-body{
-    font-family:sans-serif;
+body {
+    font-family: sans-serif;
 }
+
 /*  <button id="img-btn1"> <div>hi</div>300+ <br><p>video tutorial </p></button> */
 @import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
-*{
-margin: 0;
-padding: 0;
-}
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
 :root {
     --primary-color: rgba(230, 83, 60, 1.00);
-    --schendary-color:#edeaeaba;
+    --schendary-color: #edeaeaba;
 }
 
 /* style */
@@ -33,7 +36,8 @@ header {
     justify-content: center;
     align-items: center;
 }
-.nav-list>i{
+
+.nav-list>i {
     display: none;
 }
 
@@ -41,27 +45,30 @@ header {
     text-decoration: none;
     color: white;
     font-weight: bold;
-   
-}
-.nav-list span {
-  background-color: var(--primary-color);
-  padding: 5px 10px;
-  text-align: center;
-  border-radius: 12px;
-  
+
 }
 
-.nav-list li{
+.nav-list span {
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 12px;
+
+}
+
+.nav-list li {
     list-style: none;
 }
-.nav>.fitness{
+
+.nav>.fitness {
     color: var(--primary-color);
     font-size: 3rem;
     font-weight: bold;
     font-style: italic;
 }
+
 /* banner Style */
-.banner{
+.banner {
     margin-left: 15%;
     margin-right: 15%;
     display: flex;
@@ -69,23 +76,28 @@ header {
     justify-content: space-between;
     gap: 20px;
 }
-.banner-text{
+
+.banner-text {
     width: 40%;
-   
+
 }
-.banner-text h1{
+
+.banner-text h1 {
     color: #ffff;
     font-size: 3.5rem;
     font-weight: bold;
     line-height: 55px;
     margin-bottom: 20px;
-   
+
 }
-.banner-text h1 .textsp{
-    font-family: "Ballet",cursive;
+
+.banner-text h1 .textsp {
+    font-family: "Ballet", cursive;
 }
-#btn1,#btn2{
-    background-color:var(--primary-color) ;
+
+#btn1,
+#btn2 {
+    background-color: var(--primary-color);
     color: #ffff;
     padding: 9px 16px;
     border: none;
@@ -94,126 +106,403 @@ header {
     font-size: 1.1rem;
     margin-top: 20px;
 }
-#btn2{
+
+#btn2 {
     background-color: transparent;
     border: 2px solid #ffffff61;
     margin-left: 20px;
 }
-.banner-text p{
+
+.banner-text p {
     color: var(--schendary-color);
     font-weight: 400;
 }
-#img-btn2,#img-btn1{
-background-color: rgba(60, 49, 49, 0.127);
-padding: 13px 20px;
-border: 1px solid #ffffff2e ;
-border-radius: 14px;
-color: #f4e8e8;
-font-weight: 700;
+
+#img-btn2,
+#img-btn1 {
+    background-color: rgba(60, 49, 49, 0.127);
+    padding: 13px 20px;
+    border: 1px solid #ffffff2e;
+    border-radius: 14px;
+    color: #f4e8e8;
+    font-weight: 700;
 
 }
-#img-btn1{
-    
-    
-}
-#img-btn2{
-   position: absolute;
+
+#img-btn1 {}
+
+#img-btn2 {
+    position: absolute;
     margin-top: 100px;
     margin-left: -150px;
 }
-#img-btn1>div{
+
+#img-btn1>div {
     width: 25px;
     height: 25px;
     background-color: rgb(153, 51, 51);
     border-radius: 50%;
     text-align: center;
-    margin-bottom:-10px;
-    color:rgb(153, 51, 51) ;
-   
+    margin-bottom: -10px;
+    color: rgb(153, 51, 51);
+
 }
+
 /* mobile isken */
 @media screen and (max-width:576px) {
-    .nav{
-        margin: 35px 20px;;
+    .nav {
+        margin: 35px 20px;
+        ;
     }
-    .nav-list>li{
+
+    .nav-list>li {
         display: none;
-        
+
     }
-    .nav-list>.home{
+
+    .nav-list>.home {
         display: none;
     }
-    .nav-list>i{
-     display: block;
-     font-size: 2.1rem;
-     color: #ffff;
-     
+
+    .nav-list>i {
+        display: block;
+        font-size: 2.1rem;
+        color: #ffff;
+
     }
-    .nav,.fitness{
+
+    .nav,
+    .fitness {
         font-size: 1rem;
     }
-    .banner{
+
+    .banner {
         flex-direction: column;
         margin-left: 1px;
         margin-right: 1px;
         margin-left: 10px;
     }
-    .banner-text{
+
+    .banner-text {
         width: 100%;
     }
-    .banner-text h1{
+
+    .banner-text h1 {
         font-size: 2.5rem;
     }
-    .banner-text button{
+
+    .banner-text button {
         margin-left: 50px;
     }
+    #img-btn2{
+        
+        margin-right: 10px;
+    }
 }
+
 /* Main bar */
 /* your-habits */
-.section-1{
+main {
     width: 100%;
-    background-color:rgb(4, 4, 4) ;
+    background-color: rgb(4, 4, 4);
     position: absolute;
-    
+
 }
-.habite-text-continer{
-   width: 30%;
-   margin-left: 40%;
-   
-    
+
+.habite-text-continer {
+    width: 30%;
+    margin-left: 40%;
+
+
 }
-.your-habits{
+
+.your-habits {
     color: #f4e8e8;
     font-size: 3rem;
     font-weight: 700;
     margin-top: 58px;
 }
-.habit-discipson{
+
+.habit-discipson {
     color: var(--schendary-color);
     margin-top: 10px;
     font-size: 15px;
     font-weight: 500;
 }
-.habit-img{
+
+.habit-img {
     width: 70%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 40px;
     margin-left: 315px;
     gap: 20px;
     margin-bottom: 100px;
 }
-.movement>img{
-   border-radius: 50%;
+
+.movement>img {
+    border-radius: 50%;
 }
-.movement>h2{
+
+.movement>h2 {
     color: #ffff;
     margin-bottom: 10px;
     margin-left: 26px;
     margin-top: 10px;
 }
-.movement>p{
-    color: var(--schendary-color)
+
+.movement>p {
+    color: var(--schendary-color);
+}
+/* your-habits responcive */
+@media screen and (max-width:576px) {
+    .habite-text-continer{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .habit-img{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        text-align: center;
+       gap: 50px;
+       margin-top:86px;
+    }
+    .movement>p{
+        margin-right: 18px;
+    }
+}
+/* Tabe mobile*/
+@media screen and (min-width:576px) and (max-width:900px){
+    .habit-img{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+        text-align: center;
+       gap: 50px;
+       margin-top:86px;
+    }
+    .habite-text-continer{
+        width: 100%;
+        margin-left: 10px;
+    }
+    .nav {
+        margin: 35px 20px;
+        ;
+    }
+
+    .nav-list>li {
+        display: none;
+
+    }
+
+    .nav-list>.home {
+        display: none;
+    }
+
+    .nav-list>i {
+        display: block;
+        font-size: 2.1rem;
+        color: #ffff;
+
+    }
+
+    .nav,
+    .fitness {
+        font-size: 2rem;
+    }
+
+    .banner {
+        flex-direction: column;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-left: 10px;
+    }
+
+    .banner-text {
+        width: 100%;
+    }
+
+    .banner-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner-text button {
+        margin-left: 50px;
+    }
+    #img-btn2{
+        
+        margin-right: 10px;
+    }
+}
+/* tabe mobile */
+/* run style */
+.run-continer{
+    width: 70%;
+    background-color: rgba(34, 34, 34, 1.00);
+    margin: 0px auto;
+    display: flex;
+    padding: 30px 50px;
+    box-shadow: 1px 2px 7px 10px #1b1b1c41;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.run-img>img{
+   width: 100%;
+   height: 100%;
+   border-radius: 15px;
    
+}
+.run-img {
    
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+   box-shadow: 1px 1px 5px 4px #363434f9;
+
+}
+.run-text{
+    width: 50%;
+    
+}
+.run-text h1{
+    color: #ffffffe7;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+}
+.run-text p{
+    color: var(--schendary-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+.run-text>button{
+    background-color: var(--primary-color);
+    color: #ffff;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 20px; 
+    margin-bottom: 15px;
+}
+/* run responcive */
+@media screen and (max-width:576px) {
+    .run-continer{
+        flex-direction: column;
+        width: 53%;
+    }
+    .run-text{
+        width: 100%;
+    }
+    .run-text h1{
+        font-size: 2rem;
+    }
+
+}
+/* BMI */
+.calcolator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    background-color:rgba(34, 34, 34, 1.00) ;
+    
+}
+.bmi{
+    max-width: 50%;
+    margin: 0px auto;
+    text-align: center;
+}
+.bmi h1{
+    color: #ffffffe7;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.bmi p{
+    color: var(--schendary-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+table{
+    max-width: 100%;
+    text-align: left;
+    margin-left: 50%;
+    margin-top: 10px;
+}
+table,th,tr,td{
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse:collapse ;
+    padding: 0.5rem 1rem;
+    color:var(--schendary-color);
+}
+th{
+    color: white;
+}
+
+.table>h1{
+    width: 100%;
+    margin-left: 120px;
+    color: #ffff;
+}
+.from{
+    margin-top: 27px;
+    
+}
+.from>h1{
+    color: #ffff;
+}
+.from>p{
+    color:var(--schendary-color) ;
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+input{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+   background-color: rgb(106, 104, 104);
+   margin: 10px;
+   
+  
+}
+input::placeholder{
+    color: rgba(239, 230, 230, 0.867);
+    font-size: 15px;
+}
+.lest-input{
+    width: 50%;
+
+}
+@media screen and (max-width:576px) 
+{
+    .calcolator{
+        flex-direction: column;
+       
+    }   
+    .table{
+        margin-right: 100px;
+    } 
+    .table>h1 {
+       margin-left: 92px;
+    }
+    .from{
+       margin-bottom: 10px;
+       
+    }
+    .from>p{
+        margin-left: 110px;
+    }
+    
 }
