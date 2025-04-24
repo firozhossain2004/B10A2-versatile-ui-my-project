@@ -1,0 +1,171 @@
+body{
+    font-family:sans-serif;
+}
+/*  <button id="img-btn1"> <div>hi</div>300+ <br><p>video tutorial </p></button> */
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+*{
+margin: 0;
+padding: 0;
+}
+:root {
+    --primary-color: rgba(230, 83, 60, 1.00);
+    --schendary-color:#edeaeaba;
+}
+
+/* style */
+/* header-style */
+header {
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.825);
+}
+
+.nav {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list>i{
+    display: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+   
+}
+.nav-list span {
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 12px;
+  
+}
+
+.nav-list li{
+    list-style: none;
+}
+.nav>.fitness{
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+}
+/* banner Style */
+.banner{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.banner-text{
+    width: 40%;
+   
+}
+.banner-text h1{
+    color: #ffff;
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 55px;
+    margin-bottom: 20px;
+   
+}
+.banner-text h1 .textsp{
+    font-family: "Ballet",cursive;
+}
+#btn1,#btn2{
+    background-color:var(--primary-color) ;
+    color: #ffff;
+    padding: 9px 16px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+#btn2{
+    background-color: transparent;
+    border: 2px solid #ffffff61;
+    margin-left: 20px;
+}
+.banner-text p{
+    color: var(--schendary-color);
+    font-weight: 400;
+}
+#img-btn2,#img-btn1{
+background-color: rgba(0, 0, 0, 0.127);
+padding: 13px 20px;
+border: 1px solid #ffffff2e ;
+border-radius: 14px;
+color: #f4e8e8;
+font-weight: 700;
+
+}
+#img-btn1{
+    
+    
+}
+#img-btn2{
+   position: absolute;
+    margin-top: 100px;
+    margin-left: -150px;
+}
+#img-btn1>div{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(153, 51, 51);
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom:-10px;
+    color:rgb(153, 51, 51) ;
+   
+}
+/* mobile isken */
+@media screen and (max-width:576px) {
+    .nav{
+        margin: 35px 20px;;
+    }
+    .nav-list>li{
+        display: none;
+        
+    }
+    .nav-list>.home{
+        display: none;
+    }
+    .nav-list>i{
+     display: block;
+     font-size: 2.1rem;
+     color: #ffff;
+     
+    }
+    .nav,.fitness{
+        font-size: 1rem;
+    }
+    .banner{
+        flex-direction: column;
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-left: 10px;
+    }
+    .banner-text{
+        width: 100%;
+    }
+    .banner-text h1{
+        font-size: 2.5rem;
+    }
+    .banner-text button{
+        margin-left: 50px;
+    }
+}
+/* Main bar */
